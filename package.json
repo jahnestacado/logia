@@ -1,0 +1,15 @@
+{
+  "name": "hermes-log",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ioannis Tzanellis <ioannis.kiwe@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "extend": "^3.0.0",
+    "moment": "^2.10.6"
+  }
+}
