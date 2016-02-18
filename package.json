@@ -9,7 +9,9 @@
   "author": "Ioannis Tzanellis <ioannis.kiwe@gmail.com>",
   "license": "ISC",
   "dependencies": {
+    "colors": "^1.1.2",
     "extend": "^3.0.0",
+    "hermes-bus": "^2.1.1",
     "moment": "^2.10.6",
     "request": "^2.65.0",
     "socket.io": "^1.3.7"
