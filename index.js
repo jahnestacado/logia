@@ -1,1 +1,1 @@
-module.exports = require('./lib/hermes-log.js');
+module.exports = require('./lib/logia.js');
