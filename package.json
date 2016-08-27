@@ -1,25 +1,36 @@
 {
-  "name": "hermes-log",
-  "version": "0.0.16",
+  "name": "logia",
+  "version": "0.0.1",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Ioannis Tzanellis <ioannis.kiwe@gmail.com>",
-  "license": "ISC",
   "dependencies": {
     "colors": "^1.1.2",
     "extend": "^3.0.0",
-    "hermes-bus": "^2.1.4",
+    "hermes-bus": "^2.2.6",
     "mkdirp": "^0.5.1",
-    "moment": "^2.10.6",
-    "request": "^2.65.0",
+    "moment": "^2.14.1",
+    "request": "^2.73.0",
     "underscore": "^1.8.3",
-    "ws": "^1.0.1"
+    "ws": "^1.1.1"
   },
-  "devDependencies": {
-    "bufferutil": "^1.2.1",
-    "utf-8-validate": "^1.2.1"
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jahnestacado/logia.git"
+  },
+  "keywords": [
+    "log",
+    "logger",
+    "logging",
+    "remote",
+    "hot",
+    "reload"
+  ],
+  "author": "Ioannis Tzanellis <ioannis.kiwe@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jahnestacado/logia/issues"
   }
 }
