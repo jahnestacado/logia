@@ -1,1 +1,1 @@
-module.exports = require('./lib/logia.js');
+module.exports = require("./lib/logia-factory.js");
