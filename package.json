@@ -25,8 +25,9 @@
     "logger",
     "logging",
     "remote",
-    "hot",
-    "reload"
+    "hot reload",
+    "fullstack",
+    "regexp"
   ],
   "author": "Ioannis Tzanellis <ioannis.kiwe@gmail.com>",
   "license": "MIT",
