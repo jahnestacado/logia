@@ -1,6 +1,4 @@
 # logia
 
 ## API
-
--   [Doc in Markdown](docs/api.md)
--   [Doc in HTML](docs/api.html/index.html)
+Documentation in [Markdown](docs/api.md) or [HTML](https://htmlpreview.github.io/?https://github.com/jahnestacado/logia/blob/master/docs/api.html/index.html)
