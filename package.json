@@ -7,7 +7,7 @@
     "circular-json": "^0.3.1",
     "colors": "^1.1.2",
     "extend": "^3.0.0",
-    "hermes-bus": "^2.2.6",
+    "hermes-bus": "^2.2.8",
     "mkdirp": "^0.5.1",
     "moment": "^2.14.1",
     "request": "^2.73.0",
