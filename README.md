@@ -2,7 +2,7 @@
 [![downloads per month](http://img.shields.io/npm/dm/logia.svg)](https://www.npmjs.org/package/logia)
 # logia
 -----------
-Flexible distributed logger with hot-reload support
+Flexible distributed logger module with hot-reload support
 
 ##### Features
 * Control loggers through configuration file during runtime without restarting your application (hot-reload).
@@ -44,6 +44,8 @@ When requiring the logia module a ```logia.json``` configuration file is created
 Alternatively we can set the ```LOGIA_CONFIG_FILE_PATH``` environment variable if we want to change the default configuration filename and location.
 
 ## Configuration File
+Every change we make in the configuration file is immediately applied to the configuration of the loggers without the need of rebooting our application
+
 
 ```javascript
 {
@@ -85,10 +87,12 @@ For example, below configuration will set all loggers that start with the substr
   }
 ```
 
-#### appenders
-In the appenders section we can define where the logs will be stored in our filesystem. We target loggers by writing a javascript regexp string, the same way we did for the level section but instead for setting the logging level we specify the output file. Moreover we can set the maxSize property in which we specify the maximum size in MBs of the log file. If the size of that file reaches the specified limit then the first half of its contents will be deleted. The filepath is treated as an absolute path unless it starts with ```./``` which then is resolved as a relative path to the current working directory.
+By setting the level of a logger we also activate the logger and we enable others features(e.g appenders, remotes) to further configure them.
 
-For example, below configuration will append the logs of the loggers which name starts with the database-mongo and databse-redis substring to the "/temp/redis.log" and "/temp/mongo.log" files and limit their size to 20MB. Similarly, the logs of loggers with the handler substring in their name will end up in "cwd/logs/handler-errors.log".
+#### appenders
+In the appenders section we can define where the logs will be stored in our filesystem. We target the loggers by writing a javascript regexp string, the same way we did for the level section but instead for setting the logging level we specify the output file. Moreover we can set the maxSize property in which we specify the maximum size in MBs of the log file. If the size of that file reaches the specified limit then the first half of its contents will be deleted. The filepath is treated as an absolute path unless it starts with ```./``` which then is resolved as a relative path to the current working directory.
+
+For example, below configuration will append the logs of the loggers which name starts with the "_database-mongo_" and "_database-redis_" substring to the "_/temp/redis.log_" and "_/temp/mongo.log_" files respectively and limit their size to 20MBs. Similarly, the logs of the loggers which contain the "_handler_" substring in their name will end up in "_cwd/logs/handler-errors.log_" file.
 
 ```javascript
  "appenders": {
@@ -107,9 +111,9 @@ For example, below configuration will append the logs of the loggers which name 
 ```
 
 #### remotes
-The remotes section is similar to the appenders section but instead of appending the logs in a file it allows us to send them in a remote location. We need to provide a destination url and a protocol. Supported protocols are websockets and http and both use JSON format.
+The remotes section is similar to the appenders section but instead of appending the logs in a file it allows us to send them in a remote location. We need to provide a destination url and a protocol. Supported protocols are ```ws```(websockets) and ```http``` and both use JSON format.
 
-For example, below configuration will send the logs of the loggers which name starts with the database substring to the websocket server that listens on "websocket.server.com:8989". Similarly, the logs of loggers with the handler substring in their name will be send to the http server that listens on "http.server.com:8080".
+For example, below configuration will send the logs of the loggers which name starts with the "_database_" substring to the websocket server that runs on "_websocket.server.com:8989_". Similarly, the logs of loggers with the "_handler_" substring in their name will be send to the http server that runs on "http.server.com:8080".
 
 ```javascript
  "remotes": {
@@ -127,6 +131,7 @@ For example, below configuration will send the logs of the loggers which name st
 ### mode
 Logia can run both as a master or as a slave node.
 
+#### master
 Below configuration will boot up a master node on localhost:8080.
 ```javascript
   "mode": {
@@ -135,9 +140,10 @@ Below configuration will boot up a master node on localhost:8080.
         "port": 8080
     }
 ```
-By running a logia istance as a master node it allows to control all connected slaves through the masters configuration file.
+By running a logia instance as a master node it allows to control all connected slaves through the masters node configuration file.
 
-Below configuration will boot up a slave node that will connect to the master node specified above.
+#### slave
+Below configuration will boot up a slave node that will be connected and controlled by the the master node specified above.
 ```javascript
   "mode": {
         "type": "slave",
@@ -145,8 +151,10 @@ Below configuration will boot up a slave node that will connect to the master no
         "port": 8080
     }
 ```
+The master/slave setup uses websockets which preserves the order of the logs. This enables us to gather logs for client-server applications and still read them from top to bottom without the need of applying any type of sorting.
+
 ### stdout
-By setting this properrty to true all logs will be printed in standard output.
+By setting this properrty to ```true``` all logs will be printed in standard output.
 
 ### dateFormat
 Set the date format. Uses [momentjs](https://momentjs.com/docs/#/displaying/) display format.
