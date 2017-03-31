@@ -21,15 +21,28 @@ $ npm install logia
 ## Use
 ```javascript
 const Logia = require("logia");
-const logger = Logia("logger-name");
+const dbLogger = Logia("database");
+const parserLogger = Logia("parser");
 
-logger.trace("This is log of level 'trace'");
-logger.debug("This is log of level 'debug'");
-logger.info("This is log of level 'info'");
-logger.warn("This is log of level 'warn'");
-logger.error("This is log of level 'error'");
-logger.fatal("This is log of level 'fatal'");
+dbLogger.setLevel("trace");
+parserLogger.setLevel("debug");
 
+dbLogger.trace("Number of entries are 0.");
+parserLogger.debug("Invoked with no arguments.");
+dbLogger.info("Retrieving data...");
+parserLogger.warn("Note that something is missing!");
+dbLogger.error("Something exploded!");
+parserLogger.fatal("something went terribly wrong :(");
+
+```
+Above code will give below output:
+```bash
+(31-03-2017 11:54:06) TRACE [database]:Number of entries are 0.
+(31-03-2017 11:54:06) DEBUG [parser]  :Invoked with no arguments.
+(31-03-2017 11:54:06) INFO  [database]:Retrieving data...
+(31-03-2017 11:54:06) WARN  [parser]  :Note that something is missing!
+(31-03-2017 11:54:06) ERROR [database]:Something exploded!
+(31-03-2017 11:54:06) FATAL [parser]  :something went terribly wrong :(
 ```
 
 Logs can also be parameterized
