@@ -53,10 +53,10 @@ const e = 2.72;
 logger.info("Value of 'pi' is '{0}' and value of 'e' is '{1}'", pi, e);
 ```
 
+## Configuration File
 When requiring the logia module a ```logia.json``` configuration file is created under a ```config``` folder of the ```current working directory```.
 Alternatively we can set the ```LOGIA_CONFIG_FILE_PATH``` environment variable if we want to change the default configuration filename and location.
 
-## Configuration File
 Every change we make in the configuration file is immediately applied to the configuration of the loggers without the need of rebooting our application
 
 
