@@ -16,7 +16,7 @@ Flexible distributed logger module with hot-reload support
 ## Install
  Install with [npm](npmjs.org):
 ```bash
-    $ npm install logia
+$ npm install logia
 ```
 ## Use
 ```javascript
