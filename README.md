@@ -157,7 +157,7 @@ The master/slave setup uses websockets which preserves the order of the logs. Th
 By setting this properrty to ```true``` all logs will be printed in standard output.
 
 ### dateFormat
-Set the date format. Uses [momentjs](https://momentjs.com/docs/#/displaying/) display format.
+Set the date format. Uses [Moment.js](https://momentjs.com/docs/#/displaying/) display format.
 
 ### overwritable
 See [Logia.overwriteConfigFile](https://htmlpreview.github.io/?https://github.com/jahnestacado/logia/blob/master/docs/api.html/index.html#LogiaoverwriteConfigFile)
