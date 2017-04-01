@@ -1,7 +1,7 @@
 {
   "name": "logia",
-  "version": "0.0.6",
-  "description": "",
+  "version": "1.0.0",
+  "description": "Flexible distributed logger module with hot-reload support",
   "main": "index.js",
   "dependencies": {
     "circular-json": "^0.3.1",
@@ -28,7 +28,11 @@
     "remote",
     "hot reload",
     "fullstack",
-    "regexp"
+    "regexp",
+    "distributed",
+    "http",
+    "regexp",
+    "websocket"
   ],
   "author": "Ioannis Tzanellis <ioannis.kiwe@gmail.com>",
   "license": "MIT",
