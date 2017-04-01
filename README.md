@@ -1,5 +1,6 @@
 [![NPM version](http://img.shields.io/npm/v/logia.svg)](https://www.npmjs.org/package/logia)
 [![downloads per month](http://img.shields.io/npm/dm/logia.svg)](https://www.npmjs.org/package/logia)
+
 # logia
 -----------
 Flexible distributed logger module with hot-reload support
