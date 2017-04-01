@@ -1,2 +1,5 @@
 config
 .gitignore
+docs
+LICENSE
+README.md
