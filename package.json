@@ -1,6 +1,6 @@
 {
   "name": "logia",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Flexible distributed logger module with hot-reload support",
   "main": "index.js",
   "dependencies": {
