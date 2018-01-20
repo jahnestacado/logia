@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset='utf-8' />
-  <title>  | Documentation</title>
+  <title>logia 1.0.3 | Documentation</title>
   <meta name='viewport' content='width=device-width,initial-scale=1'>
   <link href='assets/bass.css' type='text/css' rel='stylesheet' />
   <link href='assets/style.css' type='text/css' rel='stylesheet' />
@@ -13,8 +13,8 @@
     <div class='clearfix md-mxn2'>
       <div class='fixed xs-hide fix-3 overflow-auto max-height-100'>
         <div class='py1 px2'>
-          <h3 class='mb0 no-anchor'></h3>
-          <div class='mb1'><code></code></div>
+          <h3 class='mb0 no-anchor'>logia</h3>
+          <div class='mb1'><code>1.0.3</code></div>
           <input
             placeholder='Filter'
             id='filter-input'
@@ -37,54 +37,55 @@
                     <li class='h5'><span>Static members</span></li>
                     
                       <li><a
-                        href='#LogiaoverwriteConfigFile'
+                        href='#logiaoverwriteconfigfile'
                         class='regular pre-open'>
                         .overwriteConfigFile
                       </a></li>
                     
                       <li><a
-                        href='#LogiasetDateFormat'
+                        href='#logiasetdateformat'
                         class='regular pre-open'>
                         .setDateFormat
                       </a></li>
                     
                       <li><a
-                        href='#Logiaconfig'
+                        href='#logiaconfig'
                         class='regular pre-open'>
                         .config
                       </a></li>
                     
                       <li><a
-                        href='#LogiaenterSlaveMode'
+                        href='#logiaenterslavemode'
                         class='regular pre-open'>
                         .enterSlaveMode
                       </a></li>
                     
                       <li><a
-                        href='#LogiaexitSlaveMode'
+                        href='#logiaexitslavemode'
                         class='regular pre-open'>
                         .exitSlaveMode
                       </a></li>
                     
                       <li><a
-                        href='#LogiaenterMasterMode'
+                        href='#logiaentermastermode'
                         class='regular pre-open'>
                         .enterMasterMode
                       </a></li>
                     
                       <li><a
-                        href='#LogiaexitMasterMode'
+                        href='#logiaexitmastermode'
                         class='regular pre-open'>
                         .exitMasterMode
                       </a></li>
                     
                       <li><a
-                        href='#Logiaserver.on'
+                        href='#logiaserveron'
                         class='regular pre-open'>
                         .server.on
                       </a></li>
                     
                     </ul>
+                  
                   
                   
                   
@@ -106,30 +107,31 @@
                     <li class='h5'><span>Static members</span></li>
                     
                       <li><a
-                        href='#LogiaConfiglevel'
+                        href='#logiaconfiglevel'
                         class='regular pre-open'>
                         .level
                       </a></li>
                     
                       <li><a
-                        href='#LogiaConfigappenders'
+                        href='#logiaconfigappenders'
                         class='regular pre-open'>
                         .appenders
                       </a></li>
                     
                       <li><a
-                        href='#LogiaConfigremotes'
+                        href='#logiaconfigremotes'
                         class='regular pre-open'>
                         .remotes
                       </a></li>
                     
                       <li><a
-                        href='#LogiaConfigmode'
+                        href='#logiaconfigmode'
                         class='regular pre-open'>
                         .mode
                       </a></li>
                     
                     </ul>
+                  
                   
                   
                   
@@ -193,24 +195,25 @@
                       </a></li>
                     
                       <li><a
-                        href='#loggersetLevel'
+                        href='#loggersetlevel'
                         class='regular pre-open'>
                         .setLevel
                       </a></li>
                     
                       <li><a
-                        href='#loggersetAppender'
+                        href='#loggersetappender'
                         class='regular pre-open'>
                         .setAppender
                       </a></li>
                     
                       <li><a
-                        href='#loggersetRemote'
+                        href='#loggersetremote'
                         class='regular pre-open'>
                         .setRemote
                       </a></li>
                     
                     </ul>
+                  
                   
                   
                   
@@ -232,20 +235,23 @@
 
   
   <div class='clearfix'>
+    
     <h3 class='fl m0' id='logia'>
       Logia
     </h3>
     
+    
   </div>
   
 
-  <p>The Logia module. The returned value of require(&quot;logia&quot;).</p>
+  <p>The Logia module. The returned value of require("logia").</p>
 
 
   <div class='pre p1 fill-light mt0'>Logia</div>
-
+  
   
 
+  
   
   
   
@@ -258,7 +264,8 @@
       
         <div class='space-bottom0'>
           <div>
-            <span class='code bold'>name</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code> The logger name that we want to create/retrieve
+            <span class='code bold'>name</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+	    The logger name that we want to create/retrieve
 
           </div>
           
@@ -287,7 +294,7 @@
     <div class='py1 quiet mt1 prose-big'>Static Members</div>
     <div class="clearfix">
   
-    <div class='border-bottom' id='LogiaoverwriteConfigFile'>
+    <div class='border-bottom' id='logiaoverwriteconfigfile'>
       <div class="clearfix small pointer toggle-sibling">
         <div class="py1 contain">
             <a class='icon pin-right py1 dark-link caret-right'>▸</a>
@@ -299,14 +306,15 @@
 
   
 
-  <p>Overwrites the configuration file on disk if the &quot;overwritable&quot; option is set to true.
+  <p>Overwrites the configuration file on disk if the "overwritable" option is set to true.
 NOOP when executing in the browser.</p>
 
 
-  <div class='pre p1 fill-light mt0'>overwriteConfigFile(config: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>)</div>
-
+  <div class='pre p1 fill-light mt0'>overwriteConfigFile(config: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>)</div>
+  
   
 
+  
   
   
   
@@ -319,7 +327,8 @@ NOOP when executing in the browser.</p>
       
         <div class='space-bottom0'>
           <div>
-            <span class='code bold'>config</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>)</code> An object that defines any of the 
+            <span class='code bold'>config</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>)</code>
+	    An object that defines any of the 
 <a href="#logiaconfig">LogiaConfig</a>
  properties.
 
@@ -348,7 +357,7 @@ NOOP when executing in the browser.</p>
       </div>
     </div>
   
-    <div class='border-bottom' id='LogiasetDateFormat'>
+    <div class='border-bottom' id='logiasetdateformat'>
       <div class="clearfix small pointer toggle-sibling">
         <div class="py1 contain">
             <a class='icon pin-right py1 dark-link caret-right'>▸</a>
@@ -363,10 +372,11 @@ NOOP when executing in the browser.</p>
   <p>Sets the date format in the logs.</p>
 
 
-  <div class='pre p1 fill-light mt0'>setDateFormat(format: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</div>
-
+  <div class='pre p1 fill-light mt0'>setDateFormat(format: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</div>
+  
   
 
+  
   
   
   
@@ -379,7 +389,8 @@ NOOP when executing in the browser.</p>
       
         <div class='space-bottom0'>
           <div>
-            <span class='code bold'>format</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code> <a href="http://momentjs.com/docs/#/parsing/string"> Moment.js</a>
+            <span class='code bold'>format</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+	    <a href="http://momentjs.com/docs/#/parsing/string"> Moment.js</a>
  date format
 
           </div>
@@ -407,7 +418,7 @@ NOOP when executing in the browser.</p>
       </div>
     </div>
   
-    <div class='border-bottom' id='Logiaconfig'>
+    <div class='border-bottom' id='logiaconfig'>
       <div class="clearfix small pointer toggle-sibling">
         <div class="py1 contain">
             <a class='icon pin-right py1 dark-link caret-right'>▸</a>
@@ -419,13 +430,14 @@ NOOP when executing in the browser.</p>
 
   
 
-  <p>Sets the global Logia configuration. It doesn&#x27;t overwrite the configuration file on disk.</p>
+  <p>Sets the global Logia configuration. It doesn't overwrite the configuration file on disk.</p>
 
 
-  <div class='pre p1 fill-light mt0'>config(config: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>)</div>
-
+  <div class='pre p1 fill-light mt0'>config(config: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>)</div>
+  
   
 
+  
   
   
   
@@ -438,7 +450,8 @@ NOOP when executing in the browser.</p>
       
         <div class='space-bottom0'>
           <div>
-            <span class='code bold'>config</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>)</code> An object that defines any of the 
+            <span class='code bold'>config</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>)</code>
+	    An object that defines any of the 
 <a href="#logiaconfig">LogiaConfig</a>
  properties
 
@@ -467,7 +480,7 @@ NOOP when executing in the browser.</p>
       </div>
     </div>
   
-    <div class='border-bottom' id='LogiaenterSlaveMode'>
+    <div class='border-bottom' id='logiaenterslavemode'>
       <div class="clearfix small pointer toggle-sibling">
         <div class="py1 contain">
             <a class='icon pin-right py1 dark-link caret-right'>▸</a>
@@ -482,10 +495,11 @@ NOOP when executing in the browser.</p>
   <p>Enters slave mode. Logia configuration is dictated by the specified Logia master node.</p>
 
 
-  <div class='pre p1 fill-light mt0'>enterSlaveMode(options: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>)</div>
-
+  <div class='pre p1 fill-light mt0'>enterSlaveMode(options: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>)</div>
+  
   
 
+  
   
   
   
@@ -498,7 +512,8 @@ NOOP when executing in the browser.</p>
       
         <div class='space-bottom0'>
           <div>
-            <span class='code bold'>options</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>)</code> Logia master server location info.
+            <span class='code bold'>options</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>)</code>
+	    Logia master server location info.
 
           </div>
           
@@ -516,13 +531,13 @@ NOOP when executing in the browser.</p>
             <tbody class='mt1'>
               
                 <tr>
-                  <td class='break-word'><span class='code bold'>options.host</span> <code class='quiet'><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></code>
+                  <td class='break-word'><span class='code bold'>options.host</span> <code class='quiet'><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></code>
                   </td>
                   <td class='break-word'><span></span></td>
                 </tr>
               
                 <tr>
-                  <td class='break-word'><span class='code bold'>options.port</span> <code class='quiet'><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></code>
+                  <td class='break-word'><span class='code bold'>options.port</span> <code class='quiet'><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></code>
                   </td>
                   <td class='break-word'><span></span></td>
                 </tr>
@@ -553,7 +568,7 @@ NOOP when executing in the browser.</p>
       </div>
     </div>
   
-    <div class='border-bottom' id='LogiaexitSlaveMode'>
+    <div class='border-bottom' id='logiaexitslavemode'>
       <div class="clearfix small pointer toggle-sibling">
         <div class="py1 contain">
             <a class='icon pin-right py1 dark-link caret-right'>▸</a>
@@ -569,9 +584,10 @@ NOOP when executing in the browser.</p>
 
 
   <div class='pre p1 fill-light mt0'>exitSlaveMode()</div>
-
+  
   
 
+  
   
   
   
@@ -598,11 +614,11 @@ NOOP when executing in the browser.</p>
       </div>
     </div>
   
-    <div class='border-bottom' id='LogiaenterMasterMode'>
+    <div class='border-bottom' id='logiaentermastermode'>
       <div class="clearfix small pointer toggle-sibling">
         <div class="py1 contain">
             <a class='icon pin-right py1 dark-link caret-right'>▸</a>
-            <span class='code strong strong truncate'>enterMasterMode(options, options.host.null, options.port.null)</span>
+            <span class='code strong strong truncate'>enterMasterMode(options)</span>
         </div>
       </div>
       <div class="clearfix display-none toggle-target">
@@ -610,13 +626,14 @@ NOOP when executing in the browser.</p>
 
   
 
-  <p>Enters master mode. A master Logia node can command multiple slave nodes through via the master node configuration mechanism.</p>
+  <p>Enters master mode. A master Logia node can command multiple slave nodes via the master node configuration mechanism.</p>
 
 
-  <div class='pre p1 fill-light mt0'>enterMasterMode(options: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>, options.host.null: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, options.port.null: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</div>
-
+  <div class='pre p1 fill-light mt0'>enterMasterMode(options: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>)</div>
+  
   
 
+  
   
   
   
@@ -629,23 +646,38 @@ NOOP when executing in the browser.</p>
       
         <div class='space-bottom0'>
           <div>
-            <span class='code bold'>options</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>)</code> Logia master server info.
+            <span class='code bold'>options</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>)</code>
+	    Logia master server info.
 
           </div>
           
-        </div>
-      
-        <div class='space-bottom0'>
-          <div>
-            <span class='code bold'>options.host.null</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code> 
-          </div>
-          
-        </div>
-      
-        <div class='space-bottom0'>
-          <div>
-            <span class='code bold'>options.port.null</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</code> 
-          </div>
+          <table class='mt1 mb2 fixed-table h5 col-12'>
+            <colgroup>
+              <col width='30%' />
+              <col width='70%' />
+            </colgroup>
+            <thead>
+              <tr class='bold fill-light'>
+                <th>Name</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody class='mt1'>
+              
+                <tr>
+                  <td class='break-word'><span class='code bold'>options.host</span> <code class='quiet'><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></code>
+                  </td>
+                  <td class='break-word'><span></span></td>
+                </tr>
+              
+                <tr>
+                  <td class='break-word'><span class='code bold'>options.port</span> <code class='quiet'><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></code>
+                  </td>
+                  <td class='break-word'><span></span></td>
+                </tr>
+              
+            </tbody>
+          </table>
           
         </div>
       
@@ -670,7 +702,7 @@ NOOP when executing in the browser.</p>
       </div>
     </div>
   
-    <div class='border-bottom' id='LogiaexitMasterMode'>
+    <div class='border-bottom' id='logiaexitmastermode'>
       <div class="clearfix small pointer toggle-sibling">
         <div class="py1 contain">
             <a class='icon pin-right py1 dark-link caret-right'>▸</a>
@@ -686,9 +718,10 @@ NOOP when executing in the browser.</p>
 
 
   <div class='pre p1 fill-light mt0'>exitMasterMode()</div>
-
+  
   
 
+  
   
   
   
@@ -715,11 +748,11 @@ NOOP when executing in the browser.</p>
       </div>
     </div>
   
-    <div class='border-bottom' id='Logiaserver.on'>
+    <div class='border-bottom' id='logiaserveron'>
       <div class="clearfix small pointer toggle-sibling">
         <div class="py1 contain">
             <a class='icon pin-right py1 dark-link caret-right'>▸</a>
-            <span class='code strong strong truncate'>server.on(event, callback)</span>
+            <span class='code strong strong truncate'>server.on(event, listener, callback)</span>
         </div>
       </div>
       <div class="clearfix display-none toggle-target">
@@ -728,13 +761,14 @@ NOOP when executing in the browser.</p>
   
 
   <p>Listens for certain server events.
-Currently the only supported event is the &quot;log&quot; event which is triggered when Logia server receives a log.</p>
+Currently the only supported event is the "log" event which is triggered when Logia server receives a log.</p>
 
 
-  <div class='pre p1 fill-light mt0'>server.on(event: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, callback: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function">function</a>)</div>
-
+  <div class='pre p1 fill-light mt0'>server.on(event: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, listener: any, callback: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function">function</a>)</div>
+  
   
 
+  
   
   
   
@@ -747,14 +781,24 @@ Currently the only supported event is the &quot;log&quot; event which is trigger
       
         <div class='space-bottom0'>
           <div>
-            <span class='code bold'>event</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code> 
+            <span class='code bold'>event</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+	    
           </div>
           
         </div>
       
         <div class='space-bottom0'>
           <div>
-            <span class='code bold'>callback</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function">function</a>)</code> 
+            <span class='code bold'>listener</span> <code class='quiet'>(any)</code>
+	    
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>callback</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function">function</a>)</code>
+	    
           </div>
           
         </div>
@@ -796,9 +840,11 @@ Currently the only supported event is the &quot;log&quot; event which is trigger
 
   
   <div class='clearfix'>
+    
     <h3 class='fl m0' id='logiaconfig'>
       LogiaConfig
     </h3>
+    
     
   </div>
   
@@ -807,9 +853,10 @@ Currently the only supported event is the &quot;log&quot; event which is trigger
 
 
   <div class='pre p1 fill-light mt0'>LogiaConfig</div>
-
+  
   
 
+  
   
   
   
@@ -823,43 +870,43 @@ Currently the only supported event is the &quot;log&quot; event which is trigger
     <div>
       
         <div class='space-bottom0'>
-          <span class='code bold'>level</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>)</code>
+          <span class='code bold'>level</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>)</code>
           
           
         </div>
       
         <div class='space-bottom0'>
-          <span class='code bold'>appenders</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>)</code>
+          <span class='code bold'>appenders</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>)</code>
           
           
         </div>
       
         <div class='space-bottom0'>
-          <span class='code bold'>remotes</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>)</code>
+          <span class='code bold'>remotes</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>)</code>
           
           
         </div>
       
         <div class='space-bottom0'>
-          <span class='code bold'>server</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>)</code>
+          <span class='code bold'>server</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>)</code>
           
           
         </div>
       
         <div class='space-bottom0'>
-          <span class='code bold'>stdout</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a>)</code>
+          <span class='code bold'>stdout</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a>)</code>
           
           
         </div>
       
         <div class='space-bottom0'>
-          <span class='code bold'>dateFormat</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+          <span class='code bold'>dateFormat</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
           
           
         </div>
       
         <div class='space-bottom0'>
-          <span class='code bold'>overwritable</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a>)</code>
+          <span class='code bold'>overwritable</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a>)</code>
           
           
         </div>
@@ -877,7 +924,7 @@ Currently the only supported event is the &quot;log&quot; event which is trigger
     <div class='py1 quiet mt1 prose-big'>Static Members</div>
     <div class="clearfix">
   
-    <div class='border-bottom' id='LogiaConfiglevel'>
+    <div class='border-bottom' id='logiaconfiglevel'>
       <div class="clearfix small pointer toggle-sibling">
         <div class="py1 contain">
             <a class='icon pin-right py1 dark-link caret-right'>▸</a>
@@ -893,9 +940,10 @@ Currently the only supported event is the &quot;log&quot; event which is trigger
 
 
   <div class='pre p1 fill-light mt0'>level</div>
-
+  
   
 
+  
   
   
   
@@ -909,7 +957,7 @@ Currently the only supported event is the &quot;log&quot; event which is trigger
     <div>
       
         <div class='space-bottom0'>
-          <span class='code bold'>logger_name_regexp</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+          <span class='code bold'>logger_name_regexp</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
           : (fatal|error|warn|info|debug|trace).
 
           
@@ -934,7 +982,7 @@ Currently the only supported event is the &quot;log&quot; event which is trigger
       </div>
     </div>
   
-    <div class='border-bottom' id='LogiaConfigappenders'>
+    <div class='border-bottom' id='logiaconfigappenders'>
       <div class="clearfix small pointer toggle-sibling">
         <div class="py1 contain">
             <a class='icon pin-right py1 dark-link caret-right'>▸</a>
@@ -950,9 +998,10 @@ Currently the only supported event is the &quot;log&quot; event which is trigger
 
 
   <div class='pre p1 fill-light mt0'>appenders</div>
-
+  
   
 
+  
   
   
   
@@ -966,7 +1015,7 @@ Currently the only supported event is the &quot;log&quot; event which is trigger
     <div>
       
         <div class='space-bottom0'>
-          <span class='code bold'>logger_name_regexp</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>)</code>
+          <span class='code bold'>logger_name_regexp</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>)</code>
           : {filepath: {string}, maxSize: {number}}
 
           
@@ -991,7 +1040,7 @@ Currently the only supported event is the &quot;log&quot; event which is trigger
       </div>
     </div>
   
-    <div class='border-bottom' id='LogiaConfigremotes'>
+    <div class='border-bottom' id='logiaconfigremotes'>
       <div class="clearfix small pointer toggle-sibling">
         <div class="py1 contain">
             <a class='icon pin-right py1 dark-link caret-right'>▸</a>
@@ -1007,9 +1056,10 @@ Currently the only supported event is the &quot;log&quot; event which is trigger
 
 
   <div class='pre p1 fill-light mt0'>remotes</div>
-
+  
   
 
+  
   
   
   
@@ -1023,7 +1073,7 @@ Currently the only supported event is the &quot;log&quot; event which is trigger
     <div>
       
         <div class='space-bottom0'>
-          <span class='code bold'>logger_name_regexp</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>)</code>
+          <span class='code bold'>logger_name_regexp</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>)</code>
           : {protocol: {string}, url: {string}}
 
           
@@ -1048,7 +1098,7 @@ Currently the only supported event is the &quot;log&quot; event which is trigger
       </div>
     </div>
   
-    <div class='border-bottom' id='LogiaConfigmode'>
+    <div class='border-bottom' id='logiaconfigmode'>
       <div class="clearfix small pointer toggle-sibling">
         <div class="py1 contain">
             <a class='icon pin-right py1 dark-link caret-right'>▸</a>
@@ -1064,9 +1114,10 @@ Currently the only supported event is the &quot;log&quot; event which is trigger
 
 
   <div class='pre p1 fill-light mt0'>mode</div>
-
+  
   
 
+  
   
   
   
@@ -1080,20 +1131,20 @@ Currently the only supported event is the &quot;log&quot; event which is trigger
     <div>
       
         <div class='space-bottom0'>
-          <span class='code bold'>type</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+          <span class='code bold'>type</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
           : (master|slave)
 
           
         </div>
       
         <div class='space-bottom0'>
-          <span class='code bold'>host</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+          <span class='code bold'>host</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
           
           
         </div>
       
         <div class='space-bottom0'>
-          <span class='code bold'>port</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</code>
+          <span class='code bold'>port</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</code>
           
           
         </div>
@@ -1133,9 +1184,11 @@ Currently the only supported event is the &quot;log&quot; event which is trigger
 
   
   <div class='clearfix'>
+    
     <h3 class='fl m0' id='logger'>
       logger
     </h3>
+    
     
   </div>
   
@@ -1143,16 +1196,30 @@ Currently the only supported event is the &quot;log&quot; event which is trigger
   <p>Logia logger instance.</p>
 
 
-  <div class='pre p1 fill-light mt0'>logger</div>
-
-  
-
-  
-  
-  
+  <div class='pre p1 fill-light mt0'>logger(name: any)</div>
   
   
 
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>name</span> <code class='quiet'>(any)</code>
+	    
+          </div>
+          
+        </div>
+      
+    </div>
   
 
   
@@ -1182,10 +1249,11 @@ Currently the only supported event is the &quot;log&quot; event which is trigger
   <p>Log in warn level</p>
 
 
-  <div class='pre p1 fill-light mt0'>warn(text: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, parameters: ...Any)</div>
-
+  <div class='pre p1 fill-light mt0'>warn(text: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, parameters: ...any)</div>
+  
   
 
+  
   
   
   
@@ -1198,7 +1266,8 @@ Currently the only supported event is the &quot;log&quot; event which is trigger
       
         <div class='space-bottom0'>
           <div>
-            <span class='code bold'>text</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code> It can be parameterized by using &quot;{0}&quot;..&quot;{n}&quot; placeholders
+            <span class='code bold'>text</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+	    It can be parameterized by using "{0}".."{n}" placeholders
 
           </div>
           
@@ -1206,7 +1275,8 @@ Currently the only supported event is the &quot;log&quot; event which is trigger
       
         <div class='space-bottom0'>
           <div>
-            <span class='code bold'>parameters</span> <code class='quiet'>(...Any)</code> n-th parameter replaces &quot;{n}&quot; placeholder in log text
+            <span class='code bold'>parameters</span> <code class='quiet'>(...any)</code>
+	    n-th parameter replaces "{n}" placeholder in log text
 
           </div>
           
@@ -1248,10 +1318,11 @@ Currently the only supported event is the &quot;log&quot; event which is trigger
   <p>Log in info level</p>
 
 
-  <div class='pre p1 fill-light mt0'>info(text: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, parameters: ...Any)</div>
-
+  <div class='pre p1 fill-light mt0'>info(text: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, parameters: ...any)</div>
+  
   
 
+  
   
   
   
@@ -1264,7 +1335,8 @@ Currently the only supported event is the &quot;log&quot; event which is trigger
       
         <div class='space-bottom0'>
           <div>
-            <span class='code bold'>text</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code> It can be parameterized by using &quot;{0}&quot;..&quot;{n}&quot; placeholders
+            <span class='code bold'>text</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+	    It can be parameterized by using "{0}".."{n}" placeholders
 
           </div>
           
@@ -1272,7 +1344,8 @@ Currently the only supported event is the &quot;log&quot; event which is trigger
       
         <div class='space-bottom0'>
           <div>
-            <span class='code bold'>parameters</span> <code class='quiet'>(...Any)</code> n-th parameter replaces &quot;{n}&quot; placeholder in log text
+            <span class='code bold'>parameters</span> <code class='quiet'>(...any)</code>
+	    n-th parameter replaces "{n}" placeholder in log text
 
           </div>
           
@@ -1314,10 +1387,11 @@ Currently the only supported event is the &quot;log&quot; event which is trigger
   <p>Log in trace level</p>
 
 
-  <div class='pre p1 fill-light mt0'>trace(text: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, parameters: ...Any)</div>
-
+  <div class='pre p1 fill-light mt0'>trace(text: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, parameters: ...any)</div>
+  
   
 
+  
   
   
   
@@ -1330,7 +1404,8 @@ Currently the only supported event is the &quot;log&quot; event which is trigger
       
         <div class='space-bottom0'>
           <div>
-            <span class='code bold'>text</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code> It can be parameterized by using &quot;{0}&quot;..&quot;{n}&quot; placeholders
+            <span class='code bold'>text</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+	    It can be parameterized by using "{0}".."{n}" placeholders
 
           </div>
           
@@ -1338,7 +1413,8 @@ Currently the only supported event is the &quot;log&quot; event which is trigger
       
         <div class='space-bottom0'>
           <div>
-            <span class='code bold'>parameters</span> <code class='quiet'>(...Any)</code> n-th parameter replaces &quot;{n}&quot; placeholder in log text
+            <span class='code bold'>parameters</span> <code class='quiet'>(...any)</code>
+	    n-th parameter replaces "{n}" placeholder in log text
 
           </div>
           
@@ -1380,10 +1456,11 @@ Currently the only supported event is the &quot;log&quot; event which is trigger
   <p>Log in error level</p>
 
 
-  <div class='pre p1 fill-light mt0'>error(text: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, parameters: ...Any)</div>
-
+  <div class='pre p1 fill-light mt0'>error(text: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, parameters: ...any)</div>
+  
   
 
+  
   
   
   
@@ -1396,7 +1473,8 @@ Currently the only supported event is the &quot;log&quot; event which is trigger
       
         <div class='space-bottom0'>
           <div>
-            <span class='code bold'>text</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code> It can be parameterized by using &quot;{0}&quot;..&quot;{n}&quot; placeholders
+            <span class='code bold'>text</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+	    It can be parameterized by using "{0}".."{n}" placeholders
 
           </div>
           
@@ -1404,7 +1482,8 @@ Currently the only supported event is the &quot;log&quot; event which is trigger
       
         <div class='space-bottom0'>
           <div>
-            <span class='code bold'>parameters</span> <code class='quiet'>(...Any)</code> n-th parameter replaces &quot;{n}&quot; placeholder in log text
+            <span class='code bold'>parameters</span> <code class='quiet'>(...any)</code>
+	    n-th parameter replaces "{n}" placeholder in log text
 
           </div>
           
@@ -1446,10 +1525,11 @@ Currently the only supported event is the &quot;log&quot; event which is trigger
   <p>Log in fatal level</p>
 
 
-  <div class='pre p1 fill-light mt0'>fatal(text: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, parameters: ...Any)</div>
-
+  <div class='pre p1 fill-light mt0'>fatal(text: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, parameters: ...any)</div>
+  
   
 
+  
   
   
   
@@ -1462,7 +1542,8 @@ Currently the only supported event is the &quot;log&quot; event which is trigger
       
         <div class='space-bottom0'>
           <div>
-            <span class='code bold'>text</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code> It can be parameterized by using &quot;{0}&quot;..&quot;{n}&quot; placeholders
+            <span class='code bold'>text</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+	    It can be parameterized by using "{0}".."{n}" placeholders
 
           </div>
           
@@ -1470,7 +1551,8 @@ Currently the only supported event is the &quot;log&quot; event which is trigger
       
         <div class='space-bottom0'>
           <div>
-            <span class='code bold'>parameters</span> <code class='quiet'>(...Any)</code> n-th parameter replaces &quot;{n}&quot; placeholder in log text
+            <span class='code bold'>parameters</span> <code class='quiet'>(...any)</code>
+	    n-th parameter replaces "{n}" placeholder in log text
 
           </div>
           
@@ -1512,10 +1594,11 @@ Currently the only supported event is the &quot;log&quot; event which is trigger
   <p>Log in debug level</p>
 
 
-  <div class='pre p1 fill-light mt0'>debug(text: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, parameters: ...Any)</div>
-
+  <div class='pre p1 fill-light mt0'>debug(text: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, parameters: ...any)</div>
+  
   
 
+  
   
   
   
@@ -1528,7 +1611,8 @@ Currently the only supported event is the &quot;log&quot; event which is trigger
       
         <div class='space-bottom0'>
           <div>
-            <span class='code bold'>text</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code> It can be parameterized by using &quot;{0}&quot;..&quot;{n}&quot; placeholders
+            <span class='code bold'>text</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+	    It can be parameterized by using "{0}".."{n}" placeholders
 
           </div>
           
@@ -1536,7 +1620,8 @@ Currently the only supported event is the &quot;log&quot; event which is trigger
       
         <div class='space-bottom0'>
           <div>
-            <span class='code bold'>parameters</span> <code class='quiet'>(...Any)</code> n-th parameter replaces &quot;{n}&quot; placeholder in log text
+            <span class='code bold'>parameters</span> <code class='quiet'>(...any)</code>
+	    n-th parameter replaces "{n}" placeholder in log text
 
           </div>
           
@@ -1578,10 +1663,11 @@ Currently the only supported event is the &quot;log&quot; event which is trigger
   <p>Enables/disables stdout of logger</p>
 
 
-  <div class='pre p1 fill-light mt0'>stdout(isEnabled: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a>): <a href="#logger">logger</a></div>
-
+  <div class='pre p1 fill-light mt0'>stdout(isEnabled: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a>): <a href="#logger">logger</a></div>
+  
   
 
+  
   
   
   
@@ -1594,7 +1680,8 @@ Currently the only supported event is the &quot;log&quot; event which is trigger
       
         <div class='space-bottom0'>
           <div>
-            <span class='code bold'>isEnabled</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a>)</code> 
+            <span class='code bold'>isEnabled</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a>)</code>
+	    
           </div>
           
         </div>
@@ -1609,6 +1696,7 @@ Currently the only supported event is the &quot;log&quot; event which is trigger
       <div class='py1 quiet mt1 prose-big'>Returns</div>
       <code><a href="#logger">logger</a></code>:
         
+
       
     
   
@@ -1627,7 +1715,7 @@ Currently the only supported event is the &quot;log&quot; event which is trigger
       </div>
     </div>
   
-    <div class='border-bottom' id='loggersetLevel'>
+    <div class='border-bottom' id='loggersetlevel'>
       <div class="clearfix small pointer toggle-sibling">
         <div class="py1 contain">
             <a class='icon pin-right py1 dark-link caret-right'>▸</a>
@@ -1642,10 +1730,11 @@ Currently the only supported event is the &quot;log&quot; event which is trigger
   <p>Sets logger level</p>
 
 
-  <div class='pre p1 fill-light mt0'>setLevel(newLogLevel: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>): <a href="#logger">logger</a></div>
-
+  <div class='pre p1 fill-light mt0'>setLevel(newLogLevel: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>): <a href="#logger">logger</a></div>
+  
   
 
+  
   
   
   
@@ -1658,7 +1747,8 @@ Currently the only supported event is the &quot;log&quot; event which is trigger
       
         <div class='space-bottom0'>
           <div>
-            <span class='code bold'>newLogLevel</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code> 
+            <span class='code bold'>newLogLevel</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+	    
           </div>
           
         </div>
@@ -1673,6 +1763,7 @@ Currently the only supported event is the &quot;log&quot; event which is trigger
       <div class='py1 quiet mt1 prose-big'>Returns</div>
       <code><a href="#logger">logger</a></code>:
         
+
       
     
   
@@ -1691,7 +1782,7 @@ Currently the only supported event is the &quot;log&quot; event which is trigger
       </div>
     </div>
   
-    <div class='border-bottom' id='loggersetAppender'>
+    <div class='border-bottom' id='loggersetappender'>
       <div class="clearfix small pointer toggle-sibling">
         <div class="py1 contain">
             <a class='icon pin-right py1 dark-link caret-right'>▸</a>
@@ -1706,10 +1797,11 @@ Currently the only supported event is the &quot;log&quot; event which is trigger
   <p>Sets logger file appender</p>
 
 
-  <div class='pre p1 fill-light mt0'>setAppender(appenderOptions: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>): <a href="#logger">logger</a></div>
-
+  <div class='pre p1 fill-light mt0'>setAppender(appenderOptions: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>): <a href="#logger">logger</a></div>
+  
   
 
+  
   
   
   
@@ -1722,7 +1814,8 @@ Currently the only supported event is the &quot;log&quot; event which is trigger
       
         <div class='space-bottom0'>
           <div>
-            <span class='code bold'>appenderOptions</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>)</code> See 
+            <span class='code bold'>appenderOptions</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>)</code>
+	    See 
 <a href="#logiaconfig">LogiaConfig</a>
 
           </div>
@@ -1739,6 +1832,7 @@ Currently the only supported event is the &quot;log&quot; event which is trigger
       <div class='py1 quiet mt1 prose-big'>Returns</div>
       <code><a href="#logger">logger</a></code>:
         
+
       
     
   
@@ -1757,7 +1851,7 @@ Currently the only supported event is the &quot;log&quot; event which is trigger
       </div>
     </div>
   
-    <div class='border-bottom' id='loggersetRemote'>
+    <div class='border-bottom' id='loggersetremote'>
       <div class="clearfix small pointer toggle-sibling">
         <div class="py1 contain">
             <a class='icon pin-right py1 dark-link caret-right'>▸</a>
@@ -1772,10 +1866,11 @@ Currently the only supported event is the &quot;log&quot; event which is trigger
   <p>Sets loggers remote</p>
 
 
-  <div class='pre p1 fill-light mt0'>setRemote(protocol: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, url: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>): <a href="#logger">logger</a></div>
-
+  <div class='pre p1 fill-light mt0'>setRemote(protocol: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, url: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>): <a href="#logger">logger</a></div>
+  
   
 
+  
   
   
   
@@ -1788,7 +1883,8 @@ Currently the only supported event is the &quot;log&quot; event which is trigger
       
         <div class='space-bottom0'>
           <div>
-            <span class='code bold'>protocol</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code> &quot;ws&quot;|&quot;http&quot;
+            <span class='code bold'>protocol</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+	    "ws"|"http"
 
           </div>
           
@@ -1796,7 +1892,8 @@ Currently the only supported event is the &quot;log&quot; event which is trigger
       
         <div class='space-bottom0'>
           <div>
-            <span class='code bold'>url</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code> 
+            <span class='code bold'>url</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+	    
           </div>
           
         </div>
@@ -1811,6 +1908,7 @@ Currently the only supported event is the &quot;log&quot; event which is trigger
       <div class='py1 quiet mt1 prose-big'>Returns</div>
       <code><a href="#logger">logger</a></code>:
         
+
       
     
   
